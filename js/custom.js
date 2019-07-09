@@ -86,3 +86,11 @@ $('.digital-carousel').slick({
     // instead of a settings object
   ]
 });
+
+$(window).scroll(function(){
+  if ($(this).scrollTop() > 50) {
+     $('#naviBar').addClass('scroll-nav-change');
+  } else {
+     $('#naviBar').removeClass('scroll-nav-change');
+  }
+});
