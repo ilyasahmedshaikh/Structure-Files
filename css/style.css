@@ -5,8 +5,12 @@ body
     font-family: 'Roboto', sans-serif !important;
     overflow-x: hidden;
     margin-bottom: 0 auto;
-    background: #f2f2f2;
+    /* background: #f2f2f2; */
     font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul {
+    margin-bottom: 0;
 }
 
 .all-center {
@@ -63,6 +67,7 @@ body
 
 .scroll-nav-change{
     background-color: #171717;
+    top: 0;
 }
 
 .navi-bar .logo img
@@ -103,40 +108,40 @@ body
     padding-bottom: 70px;
 }
 
-.services .serviceBox:hover
+.services h1.back
 {
-    background-color: #eea739;
-    position: relative;
-    top: 30px;
+    font-size: 145px;
+    color: #ccc;
+    position: absolute;
 }
 
-.services .serviceBox i:hover
+.services .serviceBox
 {
-    padding-top: 8px;
-    padding-bottom: 8px;
-    color: white;
-    background-color: #eea739;
+    transition: 0.3s;
+    border-radius: 7px;
+}
+
+.services .serviceBox .head-sec
+{
+    padding: 10px 0 10px 0;
 }
 
 .services .serviceBox i
 {
     font-size: 35px;
     color: black;
-    padding-left: 5px;
+    padding-left: 15px;
 }
 
 .services .serviceBox h3
 {
-    margin: 15px 0px 19px;
     font-size: 17px;
-    padding-left: 5px;
     color: black;
     margin-bottom: 0px;
 }
 
 .services .serviceBox p
 {
-    padding-left: 5px;
     padding-top: 10px;
     font-size: 14px;
     color: #828282;
@@ -150,4 +155,26 @@ body
     background: #eea739;
     left: 20px;
     bottom: 30px;
+}
+
+.services .serviceBox:hover
+{
+    background: #fff;
+    box-shadow: 0px 0px 10px #ccc;
+    position: relative;
+    top: -10px;
+}
+
+.services .serviceBox:hover .head-sec {
+    background-color: #eea739;
+}
+
+.services .serviceBox:hover .head-sec i {
+    color: #fff;
+}
+
+.service-left
+{
+    position: absolute;
+    top: 50%;
 }
