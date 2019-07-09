@@ -102,3 +102,52 @@ body
     padding-top: 90px;
     padding-bottom: 70px;
 }
+
+.services .serviceBox:hover
+{
+    background-color: #eea739;
+    position: relative;
+    top: 30px;
+}
+
+.services .serviceBox i:hover
+{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: white;
+    background-color: #eea739;
+}
+
+.services .serviceBox i
+{
+    font-size: 35px;
+    color: black;
+    padding-left: 5px;
+}
+
+.services .serviceBox h3
+{
+    margin: 15px 0px 19px;
+    font-size: 17px;
+    padding-left: 5px;
+    color: black;
+    margin-bottom: 0px;
+}
+
+.services .serviceBox p
+{
+    padding-left: 5px;
+    padding-top: 10px;
+    font-size: 14px;
+    color: #828282;
+}
+
+.services .serviceBox .line
+{
+    /* position: absolute; */
+    width: 33px;
+    height: 2px;
+    background: #eea739;
+    left: 20px;
+    bottom: 30px;
+}
